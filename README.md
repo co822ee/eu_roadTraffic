@@ -45,3 +45,16 @@ The scripts for the model framework and validation can be found in `src/`.
 ## License
 
 This project is licensed under the terms of the [MIT License](/LICENSE).
+
+The reference of this work:
+Estimating road traffic flow across Europe using road-type specific random forests models
+Youchen Shen1*, Kees de Hoogh 2,3, Oliver Schmitz4, John Gulliver5,6, Danielle Vienneau2,3, Roel Vermeulen1, Gerard Hoek1§, Derek Karssenberg4§
+1.	Institute for Risk Assessment Sciences, Utrecht University, Utrecht, The Netherlands 
+2.	Swiss Tropical and Public Health Institute, Allschwil, Switzerland 
+3.	University of Basel, Basel, Switzerland
+4.	Department of Physical Geography, Faculty of Geosciences, Utrecht University, Utrecht, the Netherlands
+5.	Centre for Environmental Health and Sustainability, School of Geography, Geology and the Environment, University of Leicester, Leicester LE1 7HA, UK
+6.	Population Health Research Institute, St George’s, University of London, UK
+* corresponding co-author
+§ shared last co-authors
+
