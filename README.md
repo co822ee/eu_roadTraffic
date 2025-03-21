@@ -5,6 +5,8 @@ Modelling of road traffic noise and air pollution exposure for health studies re
 Here we publish the model framework with a subset of data (N=200) for test. 
 The scripts for the model framework and validation can be found in `src/`.
 
+Spatial maps of traffic estimates summed across various buffer sizes are freely available on Google Earth Engine (GEE) for academic use, as detailed in the [Output section](#output-section).
+
 ## Project Structure
 
 
@@ -40,24 +42,36 @@ The scripts for the model framework and validation can be found in `src/`.
 * `02_evaluate_5foldCV.R` evaluates the 5-fold CV result.
 * `fun_...` are ancillary scripts.
 
-## Output: maps of traffic estimates in various buffer sizes (50m-5km)
 
-https://code.earthengine.google.com/?asset=projects/ee-airview/assets/aadt
+## Output 
+<a name="output-section"></a>
+### Spatial maps of traffic estimates in various buffer sizes (50m-5km)
 
-<script>
-  window.onload = function() {
-    var jsCodeWindow = window.open("", "JavaScript Code Window", "width=500,height=500");
-    jsCodeWindow.document.write("<pre>// JavaScript Code Example\n");
-    jsCodeWindow.document.write("console.log('Hello, world!');\n");
-    jsCodeWindow.document.write("</pre>");
-  };
-</script>
+* [Asset on GEE](https://code.earthengine.google.com/?asset=projects/ee-airview/assets/aadt)
 
 
+* [A GEE example code for visualization](https://code.earthengine.google.com/2ad0bc851a70804e0d7284307de10b1c?accept_repo=users%2Fyouchenshenuu%2Fairview_shared)
+```js
+var map = ee.Image("projects/ee-airview/assets/aadt");
+var palette = ["000000", "#0000cd","#69a3cf","#7cb8de","#e2eb71", 
+               "#ebb671", "#e3702d", "#fa0000"];
+Map.setCenter(7.5277, 51.754, 6)
+Map.addLayer(map.select("aadt_50"), 
+            {min:50000, max:500000, palette: palette}, "AADT within 50 m")
+            
+Map.addLayer(map.select("aadt_500"), 
+            {min:0, max:10000000, palette: palette}, "AADT within 500 m")
+```
 
 
 
-## Add a citation file
+
+
+## Citation
+
+Shen, Y., de Hoogh, K., Schmitz, O., Gulliver, J., Vienneau, D., Vermeulen, R., Hoek, G., Karssenberg, D., 2024. Europe-wide high-spatial resolution air pollution models are improved by including traffic flow estimates on all roads. Atmos. Environ. 335, 120719. https://doi.org/10.1016/j.atmosenv.2024.120719
+
+
 
 ## License
 
