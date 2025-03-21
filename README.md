@@ -40,6 +40,23 @@ The scripts for the model framework and validation can be found in `src/`.
 * `02_evaluate_5foldCV.R` evaluates the 5-fold CV result.
 * `fun_...` are ancillary scripts.
 
+## Output: maps of traffic estimates in various buffer sizes (50m-5km)
+
+https://code.earthengine.google.com/?asset=projects/ee-airview/assets/aadt
+
+<script>
+  window.onload = function() {
+    var jsCodeWindow = window.open("", "JavaScript Code Window", "width=500,height=500");
+    jsCodeWindow.document.write("<pre>// JavaScript Code Example\n");
+    jsCodeWindow.document.write("console.log('Hello, world!');\n");
+    jsCodeWindow.document.write("</pre>");
+  };
+</script>
+
+
+
+
+
 ## Add a citation file
 
 ## License
