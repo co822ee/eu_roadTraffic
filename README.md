@@ -50,7 +50,7 @@ Spatial maps of traffic estimates summed across various buffer sizes are freely 
 * [Asset on GEE](https://code.earthengine.google.com/?asset=projects/ee-airview/assets/aadt)
 
 
-* [A GEE example code for visualization](https://code.earthengine.google.com/2ad0bc851a70804e0d7284307de10b1c?accept_repo=users%2Fyouchenshenuu%2Fairview_shared)
+* [A GEE example code for visualization](https://code.earthengine.google.com/6ad7e3cf2484c36b80c7a7a0f5f5cf79)
 ```js
 var map = ee.Image("projects/ee-airview/assets/aadt");
 var palette = ["000000", "#0000cd","#69a3cf","#7cb8de","#e2eb71", 
