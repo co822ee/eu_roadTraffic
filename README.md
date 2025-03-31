@@ -71,6 +71,7 @@ Map.addLayer(map.select("aadt_500"),
 
 Shen, Y., de Hoogh, K., Schmitz, O., Gulliver, J., Vienneau, D., Vermeulen, R., Hoek, G., Karssenberg, D., 2024. Europe-wide high-spatial resolution air pollution models are improved by including traffic flow estimates on all roads. Atmos. Environ. 335, 120719. https://doi.org/10.1016/j.atmosenv.2024.120719
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15113807.svg)](https://zenodo.org/records/15113807)
 
 
 ## License
