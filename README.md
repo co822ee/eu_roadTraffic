@@ -47,7 +47,7 @@ Spatial maps of traffic estimates summed across various buffer sizes are freely 
 <a name="output-section"></a>
 ### Spatial maps of traffic estimates in various buffer sizes (50m-5km)
 
-We pubish spatial maps of the sum of the on-road AADT estimates within various circular buffer sizes (50 m, 100 m, 200 m, 300 m, 400 m, 500 m, 700 m, 1 km, 2 km, 5 km).
+We publish spatial maps of the sum of the on-road AADT estimates within various circular buffer sizes (50 m, 100 m, 200 m, 300 m, 400 m, 500 m, 700 m, 1 km, 2 km, 5 km).
 
 The spatial maps are stored as a multi-band image on Google Earth Engine (GEE), with each band labeled as aadt_[buffer in meters].
 
